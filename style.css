@@ -1,7 +1,7 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #ffffff 0%, #3D2150 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #fffff 100%);
   color: #F9ECFF;
   min-height: 100vh;
   display: flex;
@@ -146,4 +146,5 @@ footer {
   font-family: 'Segoe UI', Arial, sans-serif !important;
   box-sizing: border-box;
 }
+
 
