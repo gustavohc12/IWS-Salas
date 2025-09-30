@@ -1,135 +1,132 @@
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
-  background: linear-gradient(135deg, #ffffff 0%, #fffff 100%);
-  color: #F9ECFF;
+  background: #F4F2F7;
+  color: #332344;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  transition: background 0.5s;
 }
 
 h1 {
   text-align: center;
-  color: #F067A6;
+  color: #A0206D;
   font-weight: 700;
   letter-spacing: 1px;
-  margin: 38px 0 20px 0;
-  font-size: 2.2rem;
-  text-shadow: 0 2px 10px #33092a44;
+  margin: 32px 0 18px 0;
+  font-size: 2.1rem;
 }
 
 .controls {
   display: flex;
   justify-content: center;
-  gap: 18px;
-  margin: 12px 0 35px 0;
+  gap: 16px;
+  margin: 12px 0 32px 0;
 }
 
 select, button {
-  padding: 12px 26px;
-  border-radius: 16px;
-  font-size: 1.12rem;
+  padding: 12px 22px;
+  border-radius: 12px;
+  font-size: 1.1rem;
   border: none;
-  background: #371F43;
-  color: #F067A6;
+  background: #EFE5F3;
+  color: #A0206D;
   font-weight: 600;
   outline: none;
-  transition: box-shadow .18s, background .17s, color .17s;
-  box-shadow: 0 2px 14px #A0206D15;
-  border: 1.5px solid #5B2267;
+  transition: box-shadow .15s, background .15s, color .15s;
+  box-shadow: 0 2px 12px rgba(160,32,109,0.05);
 }
 
 button {
-  background: linear-gradient(90deg, #F067A6 60%, #843C96 100%);
+  background: linear-gradient(90deg, #A0206D 60%, #652480 100%);
   color: #fff;
   font-weight: 700;
-  letter-spacing: 0.6px;
-  filter: brightness(1.01);
-  box-shadow: 0 3px 16px #F067A621;
+  letter-spacing: 0.5px;
+  border: none;
+  filter: brightness(0.98);
+  box-shadow: 0 2px 12px #A0206D15;
 }
 button:hover, button:focus {
-  filter: brightness(1.07);
-  background: linear-gradient(90deg, #FF62C4 60%, #A0206D 100%);
-  box-shadow: 0 6px 20px #A0206D22;
+  filter: brightness(1);
+  background: linear-gradient(90deg, #C31E6D 60%, #653B80 100%);
+  box-shadow: 0 4px 18px #A0206D1b;
 }
 
 select:focus, button:focus {
-  box-shadow: 0 0 0 3px #F067A633;
+  box-shadow: 0 0 0 2px #A0206D44;
 }
 
 #salasContainer {
   flex: 1;
   width: 100%;
-  max-width: 740px;
+  max-width: 720px;
   margin: 0 auto;
-  padding: 0 12px 36px 12px;
+  padding: 0 10px 30px 10px;
 }
 
 .sala {
-  background: #2E1A3Aee;
-  padding: 23px 20px 16px 20px;
-  margin-bottom: 26px;
-  border-radius: 22px;
-  box-shadow: 0 6px 22px 0 #1e072860;
-  border-left: 8px solid #F067A6;
-  border-right: 2px solid #371F43;
+  background: #FFF;
+  padding: 22px 18px 14px 18px;
+  margin-bottom: 22px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px 0 rgba(160,32,109,0.08);
+  border-left: 7px solid #A0206D;
+  border-right: 2px solid #F4E8F7;
   transition: box-shadow .2s, border-color .2s;
   position: relative;
 }
 
 .sala:hover {
-  border-left: 8px solid #A0206D;
-  box-shadow: 0 8px 34px 0 #5B226726;
+  border-left: 7px solid #652480;
+  box-shadow: 0 6px 32px 0 rgba(101,36,128,0.19);
 }
 
 .sala h2 {
   margin: 0 0 13px 0;
-  font-size: 1.22rem;
-  color: #F067A6;
+  font-size: 1.19rem;
+  color: #652480;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 .reuniao {
-  background: #3E2150;
-  padding: 13px 15px;
+  background: #F9F3FC;
+  padding: 11px 13px;
   margin: 8px 0;
-  border-radius: 12px;
-  font-size: 1.06rem;
+  border-radius: 10px;
+  font-size: 1.05rem;
   display: flex;
   flex-direction: column;
   gap: 3px;
-  border-left: 4px solid #F067A688;
-  box-shadow: 0 2px 10px #A0206D18;
+  border-left: 3.5px solid #A0206D88;
+  box-shadow: 0 1px 7px #A0206D10;
 }
 
 .hora {
   font-weight: 700;
-  color: #FF62C4;
-  font-size: 1.17em;
+  color: #A0206D;
+  font-size: 1.15em;
   letter-spacing: 0.2px;
 }
 
 .sem-reuniao {
-  color: #967A9F;
+  color: #bbb;
   font-style: italic;
-  font-size: 1.05rem;
-  padding: 6px 0 0 3px;
+  font-size: 1.04rem;
+  padding: 8px 0 0 2px;
 }
 
 footer {
   background: none;
   text-align: center;
   font-size: 1em;
-  color: #B47AC6;
-  padding: 19px 10px 12px 10px;
+  color: #652480;
+  padding: 18px 10px 10px 10px;
   margin-top: auto;
   font-weight: 600;
   letter-spacing: 0.5px;
-  border-top: 2px solid #3E2150;
-  opacity: 0.85;
+  border-top: 1px solid #F4E8F7;
 }
 
 @media (max-width: 700px) {
@@ -141,10 +138,9 @@ footer {
   .controls { flex-direction: column; gap: 8px; }
 }
 
+/* Para garantir look customizado mesmo em Elementor, use este reforço se precisar: */
 .calendar-widget,
 .calendar-widget * {
   font-family: 'Segoe UI', Arial, sans-serif !important;
   box-sizing: border-box;
 }
-
-
